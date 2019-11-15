@@ -1,12 +1,32 @@
    @font-face{
-       font-family: 'font';
-       src: url('fonts/orange\ juice\ 2.0.ttf');
+       font-family: "font";
+       src: url("fonts/AndroidAssassinItalic-eDDp.ttf") format("truetype");
    }   
-   html{
-       background-image: url(https://scx1.b-cdn.net/csz/news/800/2018/milkyway.jpg);
-       background-repeat: no-repeat;
-       background-size: cover;
-       
+
+   .background > img{
+       position: fixed;
+       left: 0px;
+       top: 0px;
+       width: 95em;
+       height: 100em;
+   }
+
+   header > h1{
+       position: absolute;
+       top: 5em;
+       left: 20em;
+       z-index: 2;
+       color: white;
+       font-family: 'font';
+   }
+
+   header > img{
+       position: absolute;
+       z-index: 2;
+       left: 23em;
+       top: 1.5em;
+       height: 17em;
+       opacity: .6;
    }
 
    ul{
@@ -18,33 +38,34 @@
     flex-wrap: wrap;/*no-wrap, wrap-reverse, wrap*/
     justify-content: flex-end;/*flex-end, center, space-evenly,space-between, space-around, flex-start*/
     align-content: flex-start;/*flex-end, center, space-between,flex-start, space-evenly, space-around, stretch*/
+    z-index: 2;
+   
 } 
 
    li{
     text-align: left;
     float: left;
     display: block;
-    margin: .5em;
-    padding: .5em;
     text-decoration: underline;
     position: relative;
     transition-duration: 0.5s; 
     color: white;
+    
 }
 
    ul li ul{
     border-radius: 20px;
     text-align: left;
-    background: orange;
+    background: black;
     visibility: hidden;
     opacity: 0;
     min-width: 1rem;
     position: absolute;
-    transition: all 0.5s ease;
+    transition: all 2s ease;
     margin-top: 3rem;
     left:0px;
     display: none;
-   
+    
    }
 
    ul li:hover > ul, 
@@ -55,12 +76,15 @@
        visibility: visible;
        opacity: 1;
        display: block;
-
+      
    }
 
    ul li ul li{
        clear: both;
        width: 75%;
+       color: green;
+       width: 10em;
+       list-style-image: url('../images/alienhead2.png');
    }
 
    .flex1{
@@ -68,49 +92,8 @@
     margin: 1.5em;
     padding: 1.5em;
     flex: 5 5 1em;/*growth stretch/shrink flex-basis*/
+    color: white;
    } 
-
-   .left > img{
-       position: absolute;
-       top: 5em;
-       left: 2em;
-       height: 15em;
-       width: 35em;
-       border: black 10px solid;
-       filter: contrast(200%);
-   }
-    
-   .left > h1{
-       font-family: 'font';
-       text-align: center;
-       font-size: 500%;
-       position: absolute;
-       top: 2em;
-       left: 8.4em;
-       text-shadow: white 2px 2px 2px, rgb(0, 153, 255) 2px 2px 2px;
-   }
-
-   .right > img{
-       position: absolute;
-       height: 15em;
-       width: 35em;
-       top: 5em;
-       right: 2em;
-       border: black 10px solid;
-       filter: contrast(200%);
-   }
-
-   .logo > img{
-       position: absolute;
-       height: 8em;
-       width: 7em;
-       left: 44em;
-       bottom: 0;
-       -ms-transform: translate(0px, -500px);
-       -webkit-transform: translate(0px, -500px);
-       transform: translate(0px, -500px);
-       transition: 2s;
-   }
 
    .shipleft > img{
        height: 12em;
@@ -130,5 +113,25 @@
       -webkit-transform: rotateZ(3600000deg);
       transform: rotateZ(3600000deg);
       transition: 300000s;
+
    }
    
+   .back > img{
+       position: absolute;
+       top: 0px;
+       right: 0px;
+       height: 20em;
+       width: 20em;
+       z-index: 2;
+       opacity: 1;
+   }
+
+   .black > img{
+       position: absolute;
+       top: 0px;
+       left: 0px;
+       width: 90em;
+       height: 20em;
+       z-index: 1;
+       opacity: .85;
+   }
