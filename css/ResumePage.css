@@ -1,12 +1,86 @@
+
 .green > img{
-    width: 50em;
-    height: 50em;
+    width: 65em;
+    height: 63em;
     position: absolute;
+    left: 14.5%;
     top: 5em;
 }
-header > h1{
+.green2 > img{
+    width: 80em;
+    height: 50em;
     position: absolute;
-    top: 2em;
-    left: 9.5em;
+    left: 6.5em;
+    top: 12em;
+    opacity: 0.9
+}
+.res > h1{
+    position: absolute;
+    top:1.5em;
+    left: 49%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
     font-size: 350%;
+    border-bottom: 2px black solid;
+    font-family: fantasy;
+}
+.background > img{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 95em;
+    height: 100em;
+    z-index: -1;
+}
+.topleft > img{
+    position: relative;
+    width: 9em;
+    height: 9em;
+    left: 5em;
+    top: 3em;
+}
+.topright > img{
+    position: absolute;
+    width: 9em;
+    height: 9em;
+    left: 78em;
+    top: 4em;
+}
+.bottomleft > img{
+    position: absolute;
+    width: 9em;
+    height: 9em;
+    left: 5em;
+    top: 61em;
+}
+.bottomright > img{
+    position: absolute;
+    width: 9em;
+    height: 9em;
+    left: 78em;
+    top: 61em;
+}
+.name > h1{
+    position: absolute;
+    top: 7em;
+    left: 49%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.info > h3 > a{
+    font-family: sans-serif;
+    position: absolute;
+    top: 38%;
+    left: 49%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+}
+.info2 > h3{
+    font-family: sans-serif;
+    position: absolute;
+    top: 40%;
+    left: 49%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
