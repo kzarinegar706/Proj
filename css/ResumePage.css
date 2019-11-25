@@ -1,4 +1,6 @@
-
+body{
+    width: 100vh;
+}
 .green > img{
     width: 65em;
     height: 63em;
@@ -83,4 +85,26 @@
     left: 49%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+}
+
+.info3 h2{
+    position: relative;
+    top: 8em;
+    left: 27em;
+}
+.info3 p{
+    position: relative;
+    top: 12em;
+    left: 26.5em;
+}
+.mid > p{
+    position: absolute;
+    top: 27em;
+    left: 34em;
+}
+
+.info4 h2{
+    position: absolute;
+    top: 20em;
+    left: 24em;
 }
