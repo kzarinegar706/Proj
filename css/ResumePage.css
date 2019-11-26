@@ -19,7 +19,7 @@ body{
 .res > h1{
     position: absolute;
     top:1.5em;
-    left: 49%;
+    left: 13.3em;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     font-size: 350%;
@@ -64,7 +64,7 @@ body{
 }
 .name > h1{
     position: absolute;
-    top: 7em;
+    top: 6em;
     left: 49%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -72,7 +72,7 @@ body{
 .info > h3 > a{
     font-family: sans-serif;
     position: absolute;
-    top: 38%;
+    top: 13.5em;
     left: 49%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -81,7 +81,7 @@ body{
 .info2 > h3{
     font-family: sans-serif;
     position: absolute;
-    top: 40%;
+    top: 14em;
     left: 49%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -89,22 +89,92 @@ body{
 
 .info3 h2{
     position: relative;
-    top: 8em;
+    top: 6em;
     left: 27em;
 }
 .info3 p{
     position: relative;
-    top: 12em;
-    left: 26.5em;
+    top: 7.8em;
+    left: 25em;
+    font-family: sans-serif;
 }
 .mid > p{
     position: absolute;
-    top: 27em;
+    top: 22em;
     left: 34em;
+    font-family: sans-serif;
 }
 
 .info4 h2{
     position: absolute;
-    top: 20em;
+    top: 16.5em;
     left: 24em;
+}
+
+.info5 ul li{
+    position: relative;
+    top: 13em;
+    left: 20em;
+    font-family: sans-serif;
+}
+
+.education h2{
+    position: absolute;
+    top: 30em;
+    left: 28em;
+}
+.ul{
+    list-style-type: none;
+    margin: 0em;
+    padding: 0em;
+    display: flex; /*inline, block, inline-block, none*/
+    flex-direction: row;/*column, row-reverse, column reverse*/
+    flex-wrap: wrap;/*no-wrap, wrap-reverse, wrap*/
+    justify-content: space-evenly;/*flex-end, center, space-evenly,space-between, space-around, flex-start*/
+    /*height: 250px;*/
+    align-content: space-evenly;/*flex-end, center, space-between,flex-start, space-evenly, space-around, stretch*/
+    width: 65em;
+    font-family: sans-serif;
+}
+.flex1{
+    position: relative;
+    left: 17em;
+    top: 17em;
+    order: 1;
+    margin: .5em;
+    padding: .5em;
+    flex: 10 10 5em;/*growth stretch/shrink flex-basis*/
+}
+.ed{
+    position: relative;
+    top: 17em;
+    left: 26em;
+    font-family: sans-serif;
+}
+.info6 h2{
+    position: absolute;
+    top: 37em;
+    left: 24em;
+}
+.employ{
+    list-style-type: none;
+    margin: 0em;
+    padding: 0em;
+    display: flex; /*inline, block, inline-block, none*/
+    flex-direction: row;/*column, row-reverse, column reverse*/
+    flex-wrap: wrap;/*no-wrap, wrap-reverse, wrap*/
+    justify-content: space-evenly;/*flex-end, center, space-evenly,space-between, space-around, flex-start*/
+    /*height: 250px;*/
+    align-content: space-evenly;/*flex-end, center, space-between,flex-start, space-evenly, space-around, stretch*/
+    width: 75em;
+    font-family: sans-serif;
+}
+.flex2{
+    position: relative;
+    left: 17em;
+    top: 20em;
+    order: 1;
+    margin: .5em;
+    padding: .5em;
+    flex: 10 10 5em;/*growth stretch/shrink flex-basis*/
 }
