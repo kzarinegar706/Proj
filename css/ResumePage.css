@@ -178,3 +178,80 @@ body{
     padding: .5em;
     flex: 10 10 5em;/*growth stretch/shrink flex-basis*/
 }
+.bus p{
+    position: absolute;
+    top: 60em;
+    left: 18em;
+}
+.duty p{
+    position: absolute;
+    top: 62em;
+    left: 24em;
+    font-family: sans-serif;
+}
+  .drop ul{
+    position: absolute;
+    list-style: none;
+    top: 1em;
+    left: 9em;
+    display: flex; /*inline, block, inline-block, none*/
+    flex-direction: column;/*column, row-reverse, column reverse*/
+    flex-wrap: wrap;/*no-wrap, wrap-reverse, wrap*/
+    justify-content: flex-end;/*flex-end, center, space-evenly,space-between, space-around, flex-start*/
+    align-content: flex-start;/*flex-end, center, space-between,flex-start, space-evenly, space-around, stretch*/
+    z-index: 2;
+   
+} 
+
+   .drop li{
+    text-align: left;
+    float: left;
+    display: block;
+    text-decoration: underline;
+    position: relative;
+    transition-duration: 0.5s; 
+    color: white;
+    
+}
+
+   .drop ul li ul{
+    border-radius: 20px;
+    text-align: left;
+    background: black;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 1rem;
+    position: absolute;
+    transition: all 2s ease;
+    margin-top: 3rem;
+    left:0px;
+    display: none;
+    
+   }
+
+   .drop ul li:hover > ul, 
+   ul li ul:hover{
+       text-align: center;
+       top: 35px;
+       left: 20px;
+       visibility: visible;
+       opacity: 1;
+       display: block;
+      
+   }
+
+   .drop ul li ul li{
+       clear: both;
+       width: 75%;
+       color: green;
+       width: 10em;
+       list-style-image: url('../images/alienhead2.png');
+   }
+
+   .flex3{
+    order: 1;
+    margin: 1.5em;
+    padding: 1.5em;
+    flex: 5 5 1em;/*growth stretch/shrink flex-basis*/
+    color: white;
+   } 
