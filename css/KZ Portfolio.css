@@ -169,24 +169,27 @@
     z-index: 1;
     opacity: .85;
 }
-  .scroll marquee{
+   .scroll marquee{
     height: 100px;
     overflow: hidden;
     position: relative;
-    color: white;
-    font-size: 100px; 
+    color: green;
+    font-size: 100px;
+    top: 2em;
+    left: 0em;
+    z-index: 3;
 }
   .scroll marquee p{
     position: relative;
-    width: 100%;
     height: 100%;
+    width: 0%;
     margin: 0;
     line-height: 50px;
     text-align: center;
     -moz-transform: translateX(100%);
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
-    -moz-animation: scroll-left 1s linear infinite;
-    -webkit-animation: scroll-left 1s linear infinite;
-    animation: scroll-left 1s linear infinite;
+    -moz-animation: scroll-right linear infinite;
+    -webkit-animation: scroll-right linear infinite;
+    animation: scroll-right  linear infinite;
 }
