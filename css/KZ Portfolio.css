@@ -32,7 +32,8 @@
    ul{
     position: absolute;
     list-style: none;
-    top: -2em;
+    top: -4em;
+    left: -1em;
     display: flex; /*inline, block, inline-block, none*/
     flex-direction: column;/*column, row-reverse, column reverse*/
     flex-wrap: wrap;/*no-wrap, wrap-reverse, wrap*/
@@ -84,6 +85,7 @@
        width: 75%;
        color: green;
        width: 10em;
+       height: 3em;
        list-style-image: url('../images/alienhead2.png');
    }
 
@@ -170,26 +172,21 @@
     opacity: .85;
 }
    .scroll marquee{
-    height: 100px;
     overflow: hidden;
     position: relative;
-    color: green;
-    font-size: 100px;
-    top: 2em;
+    top: 20em;
     left: 0em;
     z-index: 3;
 }
   .scroll marquee p{
     position: relative;
-    height: 100%;
     width: 0%;
     margin: 0;
-    line-height: 50px;
     text-align: center;
     -moz-transform: translateX(100%);
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
-    -moz-animation: scroll-right linear infinite;
-    -webkit-animation: scroll-right linear infinite;
-    animation: scroll-right  linear infinite;
+    -moz-animation: scroll-right 3s linear infinite;
+    -webkit-animation: scroll-right 3s linear infinite;
+    animation: scroll-right 3s linear infinite;
 }

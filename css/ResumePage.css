@@ -145,6 +145,7 @@ body{
     padding: .5em;
     flex: 10 10 5em;/*growth stretch/shrink flex-basis*/
 }
+
 .ed{
     position: relative;
     top: 17em;
@@ -189,6 +190,7 @@ body{
     left: 24em;
     font-family: sans-serif;
 }
+
   .drop ul{
     position: absolute;
     list-style: none;
@@ -200,7 +202,6 @@ body{
     justify-content: flex-end;/*flex-end, center, space-evenly,space-between, space-around, flex-start*/
     align-content: flex-start;/*flex-end, center, space-between,flex-start, space-evenly, space-around, stretch*/
     z-index: 2;
-   
 } 
 
    .drop li{
@@ -243,9 +244,9 @@ body{
    .drop ul li ul li{
        clear: both;
        width: 75%;
+       height: 3.5em;
        color: green;
        width: 10em;
-       list-style-image: url('../images/alienhead2.png');
    }
 
    .flex3{
@@ -253,5 +254,10 @@ body{
     margin: 1.5em;
     padding: 1.5em;
     flex: 5 5 1em;/*growth stretch/shrink flex-basis*/
-    color: white;
    } 
+   .flex3 > h2 > a{
+       color: black;
+   }
+   .flex3 > h2 > a:hover{
+       color: white;
+   }
