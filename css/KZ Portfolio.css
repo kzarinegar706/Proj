@@ -88,6 +88,9 @@
        height: 3em;
        list-style-image: url('../images/alienhead2.png');
    }
+   ul li ul li:hover{
+       filter: brightness(50%);
+   }
 
    .flex1{
     order: 1;
