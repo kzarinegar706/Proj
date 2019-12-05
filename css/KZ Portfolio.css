@@ -2,6 +2,10 @@
        font-family: "font";
        src: url("fonts/AndroidAssassinItalic-eDDp.ttf") format("truetype");
    }
+   @font-face{
+    font-family: "space";
+    src: url("fonts/destructobeambb_bold.ttf") format("truetype");
+}
 
    .background > img{
        position: fixed;
@@ -83,13 +87,13 @@
    ul li ul li{
        clear: both;
        width: 75%;
-       color: green;
+       color: lawngreen;
        width: 10em;
        height: 3em;
        list-style-image: url('../images/alienhead2.png');
    }
    ul li ul li:hover{
-       filter: brightness(50%);
+       filter: brightness(25%);
    }
 
    .flex1{
@@ -193,3 +197,23 @@
     -webkit-animation: scroll-right 3s linear infinite;
     animation: scroll-right 3s linear infinite;
 }
+
+article > h1{
+    position: absolute;
+    top: 17em;
+    color: lawngreen;
+    font-size: 300%;
+    z-index: 3;
+    font-family: 'space';
+    left: 2em;
+}
+article img{
+    position: relative;
+    height: 10em;
+    width: 10em;
+    border-radius: 90px;
+    top: 25em;
+    left: 40em;
+    z-index: 3;
+}
+
