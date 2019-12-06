@@ -1,0 +1,141 @@
+@font-face{
+    font-family: 'age';
+    src: url('fonts/space age.ttf')
+}
+.background > img{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 95em;
+    height: 100em;
+} 
+.gif > img{
+    width: 90em;
+    height: 70em;
+    -webkit-transform: rotateZ(3600000deg);
+    transform: rotateZ(3600000deg);
+    transition: 300000s;
+    position: absolute;
+    top: 0em;
+    left: -5em;
+ }
+  .black > img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 95em;
+    height: 100em;
+    z-index: 2;
+    opacity: .5;
+} 
+  header > h1{
+      font-family: 'age';
+      z-index: 3;
+      position: absolute;
+      left: 5em;
+      top: 1em;
+      color: lawngreen;
+      font-size: 350%;
+      overflow: hidden;
+      border-right: .15em solid lawngreen;
+      white-space: nowrap; 
+      margin: 0 auto; 
+      letter-spacing: .15em;
+      animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 64% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: lawngreen; }
+  }
+  .blackk > img{
+    position: absolute;
+    top: 0em;
+    left: 0px;
+    width: 95em;
+    height: 15em;
+    z-index: 1;
+    border-bottom: 2px white solid;
+}
+ul{
+    position: absolute;
+    list-style: none;
+    top: -5em;
+    left: -5em;
+    display: flex; /*inline, block, inline-block, none*/
+    flex-direction: column;/*column, row-reverse, column reverse*/
+    flex-wrap: wrap;/*no-wrap, wrap-reverse, wrap*/
+    justify-content: flex-end;/*flex-end, center, space-evenly,space-between, space-around, flex-start*/
+    align-content: flex-start;/*flex-end, center, space-between,flex-start, space-evenly, space-around, stretch*/
+    z-index: 3;
+} 
+
+   li{
+    text-align: left;
+    float: left;
+    display: block;
+    text-decoration: underline;
+    position: relative;
+    transition-duration: 0.5s; 
+    color: white;
+    
+}
+
+   ul li ul{
+    border-radius: 20px;
+    text-align: left;
+    background: black;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 1rem;
+    position: absolute;
+    transition: all 2s ease;
+    margin-top: 3rem;
+    left:0px;
+    display: none;
+    
+   }
+
+   ul li:hover > ul, 
+   ul li ul:hover{
+       text-align: center;
+       top: 35px;
+       left: 20px;
+       visibility: visible;
+       opacity: 1;
+       display: block;
+      
+   }
+
+   ul li ul li{
+       clear: both;
+       width: 75%;
+       color: lawngreen;
+       width: 10em;
+       height: 3em;
+   }
+   ul li ul li:hover{
+       filter: brightness(25%);
+   }
+
+   .flex1{
+    order: 1;
+    margin: 1.5em;
+    padding: 1.5em;
+    flex: 5 5 1em;/*growth stretch/shrink flex-basis*/
+    color: white;
+   } 
+
+   .flex1 > a{
+     color: white;
+   }
+   .flex1 > a:hover{
+       color: green;
+   }
