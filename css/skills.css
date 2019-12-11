@@ -1,0 +1,53 @@
+@font-face{
+    font-family: 'jab';
+    src: url('fonts/Jabba\ the\ Font\ Regular.ttf')
+}
+html{
+    background-image: url("https://storage.needpix.com/rsynced_images/nebula-2253941_1280.jpg");
+    background-size: cover;
+}
+body{
+    background-color: black;
+    padding: 10px;
+    margin: 100px;
+    border-radius: 10px;
+    height: 30em;
+}
+header > h1{
+    font-family: 'jab';
+    color: lawngreen;
+    float: right;
+}
+.first, .second > ul{
+    position: absolute;
+    list-style: none;
+    top: ;
+    left: ;
+    display: flex; /*inline, block, inline-block, none*/
+    flex-direction: row;/*column, row-reverse, column reverse*/
+    flex-wrap: wrap;/*no-wrap, wrap-reverse, wrap*/
+    justify-content: space-evenly;/*flex-end, center, space-evenly,space-between, space-around, flex-start*/
+    align-content: space-evenly;/*flex-end, center, space-between,flex-start, space-evenly, space-around, stretch*/
+    z-index: 2;
+    width: 1em;
+}
+ ul li img{
+    height: 5em;
+    width: 5em;
+}
+.flex{
+    order: 1;
+}
+ul:hover{
+    -ms-transform: translate(360px, -200px);
+    -webkit-transform: translate(360px, -200px);
+    transform: translate(0px, -200px);
+    transition: 2s;
+}
+.second > .flex{
+    left: 50em;
+}
+
+}
+
+
