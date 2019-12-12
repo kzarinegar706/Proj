@@ -2,52 +2,89 @@
     font-family: 'jab';
     src: url('fonts/Jabba\ the\ Font\ Regular.ttf')
 }
-html{
-    background-image: url("https://storage.needpix.com/rsynced_images/nebula-2253941_1280.jpg");
-    background-size: cover;
+ html{
+    background-image: url("https://gifimage.net/wp-content/uploads/2017/11/espacio-tumblr-gif-14.gif");
+    background-repeat: cover;
 }
 body{
     background-color: black;
     padding: 10px;
     margin: 100px;
     border-radius: 10px;
-    height: 30em;
+    width: 80em;
+    height: 200em;
 }
 header > h1{
     font-family: 'jab';
     color: lawngreen;
     float: right;
 }
-.first, .second > ul{
-    position: absolute;
+ .first > img{
+    position: relative;
     list-style: none;
-    top: ;
-    left: ;
     display: flex; /*inline, block, inline-block, none*/
     flex-direction: row;/*column, row-reverse, column reverse*/
     flex-wrap: wrap;/*no-wrap, wrap-reverse, wrap*/
     justify-content: space-evenly;/*flex-end, center, space-evenly,space-between, space-around, flex-start*/
     align-content: space-evenly;/*flex-end, center, space-between,flex-start, space-evenly, space-around, stretch*/
-    z-index: 2;
-    width: 1em;
-}
- ul li img{
-    height: 5em;
+    z-index: 3; 
+    height: 5.5em;
     width: 5em;
+    top: 48em;
+    left: 20em;
 }
-.flex{
-    order: 1;
+  .second > img{
+    position: relative;
+    list-style: none;
+    display: flex; /*inline, block, inline-block, none*/
+    flex-direction: row;/*column, row-reverse, column reverse*/
+    flex-wrap: wrap;/*no-wrap, wrap-reverse, wrap*/
+    justify-content: space-evenly;/*flex-end, center, space-evenly,space-between, space-around, flex-start*/
+    align-content: space-evenly;/*flex-end, center, space-between,flex-start, space-evenly, space-around, stretch*/
+    z-index: 3;
+    height: 5.5em;
+    width: 5em;
+    top: 0em;
+    left: 37.5em;
 }
-ul:hover{
-    -ms-transform: translate(360px, -200px);
-    -webkit-transform: translate(360px, -200px);
-    transform: translate(0px, -200px);
-    transition: 2s;
+.first:hover{
+    -ms-transform: translate(0px, -200px);
+    -webkit-transform: translate(0px, -200px);
+    transform: translate(0px, -775px);
+    transition: 3s;
 }
-.second > .flex{
-    left: 50em;
+.second:hover{
+    -ms-transform: translate(0px, -200px);
+    -webkit-transform: translate(0px, -200px);
+    transform: translate(0px, -775px);
+    transition: 3s;
+}
+table{
+    border-collapse: collapse;
+    color: white;
+    font-size: 250%;
+    position: absolute;
+    left: 3em;
+    top: 15em;
+}
+table thead th{
+    width: 20%;
+    border-bottom: 2px solid white;
+}
+table tbody th{
+    height: 3em;
+    border-right: 2px white solid;
+    border-bottom: 2px white solid;
+    text-align: center;
+    width: 2em;
+}
+table tbody td{
+    border-bottom: 2px white solid;
 }
 
-}
+
+
+
+
 
 
