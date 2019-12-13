@@ -2,9 +2,18 @@
     font-family: 'jab';
     src: url('fonts/Jabba\ the\ Font\ Regular.ttf')
 }
+@font-face{
+    font-family: 'ship';
+    src: url('fonts/HALCION_.ttf')
+}
+@font-face{
+    font-family: 'table';
+    src: url('fonts/moonhouse.ttf');
+}
  html{
     background-image: url("https://gifimage.net/wp-content/uploads/2017/11/espacio-tumblr-gif-14.gif");
     background-repeat: cover;
+    height: 100em;
 }
 body{
     background-color: black;
@@ -12,76 +21,206 @@ body{
     margin: 100px;
     border-radius: 10px;
     width: 80em;
-    height: 200em;
+    height: 130em;
 }
 header > h1{
     font-family: 'jab';
     color: lawngreen;
     float: right;
+    font-size: 250%;
+    width: 7em;
+    text-align: center;
 }
+header > img{
+    position: absolute;
+    height: 10em;
+    width: 10em;
+    left: 75em;
+    top: 18em;
+}
+.left > img{
+    position: absolute;
+    height: 10em;
+    width: 10em;
+    left: 10em;
+    top: 30em;
+}
+article > img{
+    position: absolute;
+    height: 35em;
+    left: 33em;
+}
+article > h2{
+    position: absolute;
+    color: rgb(50, 180, 255);
+    font-size: 300%;
+    width: 6em;
+    top: 10em;
+    left: 11.8em;
+    text-align: center;
+    text-shadow: rgb(9, 18, 24) 2px 2px 10px, white 2px 2px 10px;
+    font-family: 'ship';
+}
+ul{
+    position: absolute;
+    list-style: none;
+    top: 3em;
+    left: 4em;
+    display: flex; /*inline, block, inline-block, none*/
+    flex-direction: column;/*column, row-reverse, column reverse*/
+    flex-wrap: wrap;/*no-wrap, wrap-reverse, wrap*/
+    justify-content: flex-end;/*flex-end, center, space-evenly,space-between, space-around, flex-start*/
+    align-content: flex-start;/*flex-end, center, space-between,flex-start, space-evenly, space-around, stretch*/
+    z-index: 3;
+} 
+   li{
+    text-align: left;
+    float: left;
+    display: block;
+    text-decoration: underline;
+    position: relative;
+    transition-duration: 0.5s; 
+    color: white;
+}
+   ul li ul{
+    border-radius: 20px;
+    text-align: left;
+    background: black;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 1rem;
+    position: absolute;
+    transition: all 2s ease;
+    margin-top: 3rem;
+    left:0px;
+    display: none;
+   }
+   ul li:hover > ul, 
+   ul li ul:hover{
+       text-align: center;
+       top: 35px;
+       left: 20px;
+       visibility: visible;
+       opacity: 1;
+       display: block;
+   }
+   ul li ul li{
+       clear: both;
+       width: 75%;
+       color: lawngreen;
+       width: 10em;
+       height: 3em;
+   }
+   ul li ul li:hover{
+       filter: brightness(25%);
+   }
+   .flex1{
+    order: 1;
+    margin: 1.5em;
+    padding: 1.5em;
+    flex: 5 5 1em;/*growth stretch/shrink flex-basis*/
+    color: white;
+   } 
+   .flex1 > a{
+     color: white;
+   }
+   .flex1 > a:hover{
+       color: green;
+   }
  .first > img{
     position: relative;
     list-style: none;
-    display: flex; /*inline, block, inline-block, none*/
-    flex-direction: row;/*column, row-reverse, column reverse*/
+    display: flexbox; /*inline, block, inline-block, none*/
+    flex-direction: column;/*column, row-reverse, column reverse*/
     flex-wrap: wrap;/*no-wrap, wrap-reverse, wrap*/
     justify-content: space-evenly;/*flex-end, center, space-evenly,space-between, space-around, flex-start*/
-    align-content: space-evenly;/*flex-end, center, space-between,flex-start, space-evenly, space-around, stretch*/
-    z-index: 3; 
+    align-content: space-evenly;/*flex-end, center, space-between,flex-start, space-evenly, space-around, stretch*/ 
     height: 5.5em;
     width: 5em;
-    top: 48em;
-    left: 20em;
+    top: 80em;
+    left: 25.5em;
+    padding: 8px;
 }
   .second > img{
     position: relative;
     list-style: none;
-    display: flex; /*inline, block, inline-block, none*/
-    flex-direction: row;/*column, row-reverse, column reverse*/
+    display: flexbox; /*inline, block, inline-block, none*/
+    flex-direction: column;/*column, row-reverse, column reverse*/
     flex-wrap: wrap;/*no-wrap, wrap-reverse, wrap*/
     justify-content: space-evenly;/*flex-end, center, space-evenly,space-between, space-around, flex-start*/
     align-content: space-evenly;/*flex-end, center, space-between,flex-start, space-evenly, space-around, stretch*/
-    z-index: 3;
     height: 5.5em;
     width: 5em;
-    top: 0em;
-    left: 37.5em;
+    top: 31.55em;
+    left: 44.5em;
+    padding: 8px;
 }
+  .third > img{
+    position: relative;
+    list-style: none;
+    display: flexbox; /*inline, block, inline-block, none*/
+    flex-direction: column;/*column, row-reverse, column reverse*/
+    flex-wrap: wrap;/*no-wrap, wrap-reverse, wrap*/
+    justify-content: space-evenly;/*flex-end, center, space-evenly,space-between, space-around, flex-start*/
+    align-content: space-evenly;/*flex-end, center, space-between,flex-start, space-evenly, space-around, stretch*/
+    height: 5.5em;
+    width: 5em;
+    top: -17em;
+    left: 64em;
+    padding: 8px;
+  }
+
+  .first,.second,.third{
+      width:5em;
+  }
 .first:hover{
-    -ms-transform: translate(0px, -200px);
-    -webkit-transform: translate(0px, -200px);
+    -ms-transform: translate(0px, -775px);
+    -webkit-transform: translate(0px, -775px);
     transform: translate(0px, -775px);
     transition: 3s;
 }
 .second:hover{
-    -ms-transform: translate(0px, -200px);
-    -webkit-transform: translate(0px, -200px);
+    -ms-transform: translate(0px, -775px);
+    -webkit-transform: translate(0px, -775px);
+    transform: translate(0px, -775px);
+    transition: 3s;
+}
+.third:hover{
+    -ms-transform: translate(0px, -775px);
+    -webkit-transform: translate(0px, -775px);
     transform: translate(0px, -775px);
     transition: 3s;
 }
 table{
     border-collapse: collapse;
-    color: white;
+    color: gold;
     font-size: 250%;
     position: absolute;
     left: 3em;
-    top: 15em;
+    top: 18em;
+    font-family: 'table';
+    width: 30em;
 }
 table thead th{
     width: 20%;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid lawngreen;
 }
 table tbody th{
     height: 3em;
-    border-right: 2px white solid;
-    border-bottom: 2px white solid;
+    border-right: 2px lawngreen solid;
+    border-bottom: 2px lawngreen solid;
     text-align: center;
     width: 2em;
 }
 table tbody td{
-    border-bottom: 2px white solid;
+    border-bottom: 2px lawngreen solid;
 }
-
+.black > img{
+    position: absolute;
+    width: 70em;
+    height: 40em;
+    top: 95em;
+}
 
 
 
