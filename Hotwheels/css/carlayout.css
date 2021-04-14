@@ -1,0 +1,166 @@
+html{
+  background: linear-gradient(red, orange, yellow, orange, red);
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.grid-container{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 20%, 15%, 45%, 20%;
+    background-color: rgb(252, 233, 63)
+}
+aside {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: fixed;
+    display: inline;
+
+}
+.box{
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.header{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+   border-radius: 50px;
+    font-family: 'font';
+    font-size: 200%;
+    color: red;
+    background-color: rgb(243, 243, 128);
+}
+@font-face{
+    font-family: 'font';
+    src: url('fonts/Blazed.ttf');
+}
+img
+{
+    object-fit: cover;
+}
+
+nav:hover{
+background-color: red;
+}
+@font-face{
+    font-family: 'fom';
+    src: url('fonts/IceCaps.ttf');
+}
+article.item-a > h2{
+    color: yellow;
+}
+article.item-a{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    color: black;
+    background-color:red;
+    text-align: center;
+    font-size: 150%;
+}
+article.item-a > img{
+    width: 70%;
+}
+li{
+    text-align: left;
+}
+.item-a > h2{
+    font-family: 'fom';
+    font-size: 250%;
+}
+
+article.item-b{
+    grid-column-start:2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end:4;
+    color: red;
+    background-color: blue;
+    text-align: center;
+    font-size: 150%;
+}
+
+.item-b > ul{
+    font-size: 100%;
+   
+}
+
+article.item-b > ul{
+list-style-image: url('../images/gaugemeter.png');
+width: 10%;
+height: 10%;
+}
+
+.item-b > h2{
+    font-family: 'fom';
+    font-size: 250%;
+}
+article.item-c > h2{
+    color: yellow;
+}
+article.item-c{
+    grid-column-start:4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end:4;
+    color: black;
+    background-color: red;
+    text-align: center;
+    font-size: 150%;
+    
+}
+
+.item-c > h2{
+     font-family: 'fom';
+     font-size: 225%;
+}
+
+footer.item-d{
+    grid-column-start:1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end:5;
+    background-color: orange;
+    color: blue;
+    text-align: center;
+    
+}
+footer.item-d > p{
+    font-size:150%;
+    text-decoration: none;
+    color: black;
+}
+footer.item-d > h1{
+    text-decoration: underline;
+
+}
+footer li{
+    font-size: 200%;
+    
+}
+footer a:visited{
+    color:black;
+}
+
+footer a:hover{
+color: red;
+font-size: 150%;
+
+}
+
+footer.item-e{
+    grid-column-start:2;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end:5;
+    background-color: orange;
+}

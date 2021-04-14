@@ -1,0 +1,53 @@
+.header {grid-area: header; border-radius: 0%/90%}
+.nav {grid-area: nav;}
+.article {grid-area: article;}
+.aside {grid-area: aside;}
+.footer{grid-area: footer;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'nav nav article article article article'
+    'footer footer footer footer footer footer';
+    background-color:black;
+    grid-gap: 5px;
+    padding: 10px;
+}
+.grid-container > div {
+                   
+    line-height: 2em;
+    letter-spacing: 0.1em;
+   
+    text-align: center;
+    font-size: 100%
+}
+
+.header{
+    color:lightblue;
+    background-color: rgb(15, 0, 0);
+    font-size:200%;
+}
+li{
+    list-style-type: upper-roman;
+}
+
+.nav{
+    color: black;
+    background-color: lightblue;
+
+}
+
+.article{
+    color:black;
+    background-color: aqua
+}
+
+.footer{
+    color:rgb(9, 9, 27);
+    background-color:rgb(141, 141, 248)
+}
+
+body{
+    background-color: rgba(11, 133, 133, 0.397);
+}

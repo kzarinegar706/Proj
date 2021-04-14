@@ -1,0 +1,243 @@
+@font-face{
+    font-family: 'digital';
+    src: url('fonts/Digitaltech-rm0K.otf')
+}
+html{
+    background-image: url("http://planetarium.truman.edu/files/2017/10/Space-background.jpg");
+    background-repeat: cover;
+    height: 100em;
+}
+body{
+    background-color: black;
+    margin: 100px;
+    border-radius: 50px;
+    height: 125em;
+}
+header > img{
+    -webkit-transform: rotateZ(54000deg);
+    transform: rotateZ(54000deg);
+    transition: 500s;
+    height: 10em;
+    width: 10em;
+    position: absolute;
+    left: 77em;
+    top: 10em;
+}
+.galaxy > img{
+    -webkit-transform: rotateZ(54000deg);
+    transform: rotateZ(54000deg);
+    transition: 500s;
+    height: 10em;
+    width: 10em;
+    position: absolute;
+    left: 7.5em;
+    top: 10em;
+}
+header > h1{
+    position: absolute;
+    left: 8.5em;
+    top: 4em;
+    color: lawngreen;
+    font-size: 375%;
+    overflow: hidden;
+    border-right: .15em solid lawngreen;
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    font-family: 'digital'
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 30% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: lawngreen; }
+  }
+header > h2{
+    position: absolute;
+    top: 12em;
+    left: 5em;
+    font-size: 200%;
+    color: lawngreen;
+    font-family: 'digital';
+}
+ul{
+    position: absolute;
+    list-style: none;
+    top: 2em;
+    left: 5em;
+    display: flex; /*inline, block, inline-block, none*/
+    flex-direction: column;/*column, row-reverse, column reverse*/
+    flex-wrap: wrap;/*no-wrap, wrap-reverse, wrap*/
+    justify-content: flex-end;/*flex-end, center, space-evenly,space-between, space-around, flex-start*/
+    align-content: flex-start;/*flex-end, center, space-between,flex-start, space-evenly, space-around, stretch*/
+    z-index: 3;
+} 
+
+   li{
+    text-align: left;
+    float: left;
+    display: block;
+    text-decoration: underline;
+    position: relative;
+    transition-duration: 0.5s; 
+    color: white;
+    
+}
+
+   ul li ul{
+    border-radius: 20px;
+    text-align: left;
+    background: black;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 1rem;
+    position: absolute;
+    transition: all 2s ease;
+    margin-top: 3rem;
+    left:0px;
+    display: none;
+    
+   }
+
+   ul li:hover > ul, 
+   ul li ul:hover{
+       text-align: center;
+       top: 35px;
+       left: 20px;
+       visibility: visible;
+       opacity: 1;
+       display: block;
+      
+   }
+
+   ul li ul li{
+       clear: both;
+       width: 75%;
+       color: lawngreen;
+       width: 10em;
+       height: 3em;
+   }
+   ul li ul li:hover{
+       filter: brightness(25%);
+   }
+
+   .flex1{
+    order: 1;
+    margin: 1.5em;
+    padding: 1.5em;
+    flex: 5 5 1em;/*growth stretch/shrink flex-basis*/
+    color: white;
+   } 
+
+   .flex1 > a{
+     color: white;
+   }
+   .flex1 > a:hover{
+       color: green;
+   }
+   article > a > img{
+       position: absolute;
+       height: 20em;
+       width: 30em;
+       left: 10em;
+       top: 35em;
+       border: silver 3px solid;
+   }
+   article > a > img:hover{
+       filter: brightness(50%);
+   }
+   article > h3 > a{
+       position: absolute;
+       font-size: 200%;
+       width: 12em;
+       color: white;
+       top: 15em;
+       left: 20em;
+   }
+   article > h3 > a:hover{
+       color: lawngreen;
+   }
+   article > p{
+       position: absolute;
+       color: white;
+       top: 35em;
+       left: 35em;
+       font-size: 130%;
+       width: 30em;
+   }
+
+   aside > a > img{
+    position: absolute;
+    height: 20em;
+    width: 30em;
+    left: 10em;
+    top: 65em;
+    border: silver 3px solid;
+}
+aside > a > img:hover{
+    filter: brightness(50%);
+}
+aside > h3 > a{
+    position: absolute;
+    font-size: 200%;
+    width: 12em;
+    color: white;
+    top: 28em;
+    left: 20em;
+}
+aside > h3 > a:hover{
+    color: lawngreen;
+}
+aside > p{
+    position: absolute;
+    color: white;
+    top: 55em;
+    left: 35em;
+    font-size: 130%;
+    width: 30em;
+}
+aside > h1{
+    font-family: 'digital';
+    position: absolute;
+    font-size: 200%;
+    top: 45em;
+    left: 5em;
+    color: lawngreen;
+}
+
+.ranch > a > img{
+    position: absolute;
+    height: 20em;
+    width: 30em;
+    left: 10em;
+    top: 100em;
+    border: silver 3px solid;
+}
+.ranch > a > img:hover{
+    filter: brightness(50%);
+}
+.ranch > h3 > a{
+    position: absolute;
+    font-size: 200%;
+    width: 12em;
+    color: white;
+    top: 43em;
+    left: 19em;
+}
+.ranch > h3 > a:hover{
+    color: lawngreen;
+}
+.ranch > p{
+    position: absolute;
+    color: white;
+    top: 80em;
+    left: 35em;
+    font-size: 130%;
+    width: 30em;
+}

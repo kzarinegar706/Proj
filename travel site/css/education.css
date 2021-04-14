@@ -1,0 +1,71 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+}
+
+html{
+    background-image: url("https://vignette.wikia.nocookie.net/eragonroleplay/images/b/ba/Himalaya_Mountains_1_Nepal_by_CitizenFresh.jpg/revision/latest?cb=20110715183408");
+    background-size: cover;
+    
+}
+
+body{
+    background-color: rgb(224, 144, 69);
+    padding: 10px;
+    margin: 100px;
+    border-radius: 10px;
+}
+
+.ed{
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+    color: rgb(26, 85, 247);
+    background-color: black;
+    border:aqua solid 10px;
+    transition: 3s;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    color: rgb(0, 162, 255);
+    text-decoration: underline;
+}
+
+nav{
+    border: red solid 2px;
+    overflow-wrap: break-word;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end:5;
+    grid-row-start: 2;
+    grid-row-end:3;
+}
+
+.ed > img{
+    height: 100px;
+    width: 100px;
+
+}
+
+div > a:hover{
+   color: white;
+   font-size: 110%;
+}
+
+.next{
+    font-size: 110%;
+    text-decoration: none;
+}
+
+.next:hover{
+    color: white;
+}
+
+.round{
+    border-radius: 10%;
+}
+
+figure{
+    margin: 50px;
+    text-align: center;
+}

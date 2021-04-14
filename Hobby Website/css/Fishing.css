@@ -1,0 +1,53 @@
+.header {grid-area: header; border-radius: 50%/90%}
+.nav {grid-area: nav;}
+.article {grid-area: article;}
+.aside {grid-area: aside;}
+.footer{grid-area: footer;border-radius: 40%/90%}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'article article article nav nav nav'
+    'footer footer footer footer footer footer';
+    background-color:aqua;
+    grid-gap: 10px;
+    padding: 10px;
+}
+.grid-container > div {
+                   
+    line-height: 2em;
+    letter-spacing: 0.1em;
+   
+    text-align: center;
+    font-size: 100%
+}
+
+.header{
+    color:lightblue;
+    background-color: black;
+    font-size: 200%;
+
+}
+
+.nav{
+    color:lightblue;
+    background-color: black;
+    grid-gap: 10px;
+    padding: 10px
+
+}
+
+.article{
+    color:aqua;
+    background-color: black
+}
+
+.footer{
+    color:aqua;
+    background-color:black
+}
+
+body{
+    background-color: rgb(0, 255, 255);
+}
